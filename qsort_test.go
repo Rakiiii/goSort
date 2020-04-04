@@ -9,7 +9,8 @@ func TestQuicksortFloat64(t *testing.T){
 	unsorted := []float64{2.0,6.0,1.0,4.0}
 	sorted := []float64{1.0,2.0,4.0,6.0}
 	unsortedAfter := QuicksortFloat64(unsorted)
-	errFlag := true
+	errFlag := true  
+	
 	for i:=0 ; i < len(unsorted);i++{
 		if sorted[i] != unsorted[i]{
 			t.Error("Wrong value at pos:",i," expected:",sorted[i]," found:",unsortedAfter[i])
